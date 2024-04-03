@@ -1,22 +1,247 @@
-<p style="text-align: justify;"><span style="font-family: 'andale mono', monospace; color: red;"><strong>Mission</strong></span></p>
-<p><br>Our mission is to provide a reliable and efficient lost and found management system that ensures the safe return of misplaced items to their rightful owners.</p>
-<p>&nbsp;</p>
-<p style="text-align: justify;"><span style="font-family: 'andale mono', monospace; color: red;"><strong>Vision</strong>:</span></p>
-<p style="text-align: justify;"><br>Our vision is to become the leading provider of lost and found solutions on campuses nationwide, setting the standard for efficiency and effectiveness in managing lost and found items.</p>
-<p style="text-align: justify;">&nbsp;</p>
-<p style="text-align: justify;"><span style="font-family: 'andale mono', monospace; color: red;"><strong>Core Values</strong></span>:</p>
-<p style="text-align: justify;">&nbsp;</p>
-<p style="text-align: justify;">Integrity: We are committed to operating with honesty and transparency in all aspects of our business.</p>
-<p style="text-align: justify;">Efficiency: We strive to provide quick and effective solutions for managing lost and found items.</p>
-<p style="text-align: justify;">Customer Service: We prioritize customer satisfaction and go above and beyond to ensure a positive experience for all users of our system.</p>
-<p style="text-align: justify;">Innovation: We constantly seek new ways to improve and enhance our lost and found management system.</p>
-<p style="text-align: justify;">&nbsp;</p>
-<p style="text-align: justify;"><span style="font-family: 'andale mono', monospace; color: red;"><strong>Team:</strong></span></p>
-<p style="text-align: justify;"><br>Our team consists of three dedicated professionals with expertise in technology, customer service, and lost and found management. Together, we are passionate about providing a solution that simplifies the process of retrieving misplaced items and ensures a positive experience for all users.</p>
-<p style="text-align: justify;">With Lost and Found, you can trust that your lost items are in good hands. Join us in our mission to revolutionize the way lost and found items are managed on campus.</p>
-<p style="text-align: justify;">&nbsp;</p>
-<p style="text-align: justify;">&nbsp;</p>
-<p style="text-align: justify;"><span style="font-family: 'book antiqua', palatino, serif;"><strong><span style="font-size: 20pt; color: maroon;">THE 123 OF LOST AND FOUND</span>!</strong></span></p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Paste your CSS styles here */
+        /* Spinner */
+        #spinner {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s ease-out, visibility 0s linear .5s;
+            z-index: 99999;
+        }
+
+        #spinner.show {
+            transition: opacity .5s ease-out, visibility 0s linear 0s;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            display: flex;
+            width: 45px;
+            height: 45px;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            z-index: 99;
+        }
+
+        /* About */
+        .about .container .section-about-title {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            color: var(--bs-primary);
+        }
+
+        .about .container .section-about-title::before {
+            content: "";
+            width: 50px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            margin-right: -50px;
+            border: 1px solid var(--bs-primary) !important;
+        }
+
+        /* Subscribe */
+        .subscribe {
+            background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(../img/subscribe-img.jpg);
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .subscribe .subscribe-title {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            color: var(--bs-white);
+        }
+
+        .subscribe .subscribe-title::before {
+            content: "";
+            width: 50px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            margin-right: -50px;
+            border: 1px solid var(--bs-white) !important;
+        }
+
+        .subscribe .subscribe-title::after {
+            content: "";
+            width: 50px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            margin-left: -50px;
+            border: 1px solid var(--bs-white) !important;
+        }
+        .guide-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.guide-item:hover .image {
+    transform: scale(1.1);
+}
+
+.image {
+    transition: transform 0.5s ease;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- About Section Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <img src="/uploads/defaults/about-.jpg" class="img-fluid" alt="About Us">
+                </div>
+                <div class="col-lg-7">
+                    <h5 class="section-about-title">About Us</h5>
+                    <h1 style="color:navy; font-family:'Times New Roman', serif;">Lost and Found Information System 2024!</h1>
+
+                    <p class="mb-4">Welcome to our Lost and Found Information System! We understand the distress that comes with losing personal belongings, and our mission is to alleviate that stress by providing a reliable and efficient platform for retrieving lost items.
+
+                        At our core, we are dedicated to reuniting individuals with their misplaced belongings swiftly and seamlessly. Whether it's a lost phone, keys, wallet, or any other valuable item, our system is designed to streamline the process of reporting lost items and facilitating their return to their rightful owners.
+                        
+                        Our team is committed to providing exceptional service, guided by our core values of integrity, efficiency, and customer satisfaction. We prioritize transparency in our operations, ensuring that every step of the process is clear and accessible to our users.
+                        
+                        With our innovative technology and dedicated team, we strive to set the standard for lost and found solutions. Our vision is to become the go-to platform for managing lost items, not only on campuses but also in various public and private spaces.
+                        
+                        Join us in our mission to simplify the process of retrieving lost items and experience the peace of mind that comes with our dedicated service. Together, let's ensure that every lost item finds its way back to its rightful owner.</p>
+                    <p class="mb-4">Think of us as the superheroes of the mundane, the Sherlock Holmes of misplaced keys, and the magicians of disappearing socks. With our trusty technology and a sprinkle of humor, we're on a mission to make the world a little less forgetful, one lost item at a time!</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-12">
+                            <h5 class="section-title text-center" style="color: navy; font-weight: bold; font-size: 24pt;">Services</h5>
+                            <h6 class="text-center" style="color: maroon; font-weight: bold;  font-size: 17pt;">We offer:</h6> <br>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-file text-primary me-2"></i>Item Documentation and Tracking</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-search text-primary me-2"></i>Powerful Search Capabilities</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Auto-Matching of Claims and Items</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa-flag on fa-circle text-primary me-2"></i>Auditing and Transparency</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-user text-primary me-2"></i>User Management</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-question text-primary me-2"></i>Customer Claim Management</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About End -->
+
+    <!-- Item Recovery Agents Section Start -->
+    <div class="container-fluid guide py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h5 class="section-title text-center" style="color: maroon;font-weight: bold;">Item Recovery Agents</h5>
+                    <h1 class="text-center" style="color: navy; ">Meet Our Team</h1>
+                    <p style="text-align: justify;"><br>Our team consists of three dedicated professionals with expertise in technology, customer service, and lost and found management. Together, we are passionate about providing a solution that simplifies the process of retrieving misplaced items and ensures a positive experience for all users.</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Sample item recovery agent 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="guide-item">
+                        <img src="/uploads/defaults/junior1.jpeg" class="img-fluid rounded-top" alt="Agent 1">
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <h4>Onyango Junior</h4>
+                            <p>Administrator</p>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="https://twitter.com/JuniorKe_"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="https://www.instagram.com/_famous.introvert_/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="https://github.com/onyangoju"><i class="fab fa-github"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="tel:+254705682047"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sample item recovery agent 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="guide-item">
+                        <img src="/uploads/defaults/nasra.png" class="img-fluid rounded-top" alt="Agent 2">
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <h4>Nasra Chui</h4>
+                            <p>Spotter</p>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="https://www.instagram.com/nasrahan_/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="https://github.com/Nas877"><i class="fab fa-github"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="tel:+254705078065"><i class="fas fa-phone-alt"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="https://www.linkedin.com/in/nassira-chui-7677ba297"><i class="fab fa-linkedin"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sample item recovery agent 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="guide-item">
+                        <img src="/uploads/defaults/muchacho.png" class="img-fluid rounded-top" alt="Agent 3">
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <h4>Walter Churchill</h4>
+                            <p>Verifier</p>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="https://www.instagram.com/_.muchacho.__/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="tel:+254704698679"><i class="fas fa-phone-alt"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="https://twitter.com/Churchooo"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Item Recovery Agents Section End -->
+
+    <!-- 123 of LFIS Section start -->
+    <p style="text-align: justify;"><span style="font-family: 'book antiqua', palatino, serif;"><strong><span style="font-size: 20pt; color: maroon;">THE 123 OF LOST AND FOUND</span>!</strong></span></p>
 <div class="content text-message-content" style="text-align: justify;" tabindex="0" aria-description="">
 <div role="heading" aria-level="2">
 <p>If you have lost an important item like your keys, laptop or any other valuable possession, the first thing you should do is report it to the Student Lost and Found Desk at the New Library. Additionally, please report it to us, as we maintain a real-time database of lost and found items. In case you find a lost item, please report it to us, and we will take care of the rest. Our goal is to reunite people with their lost items and make the process more efficient.</p>
@@ -28,3 +253,56 @@
 <li style="text-align: justify;">If you&rsquo;ve lost an important item, the initial step is to write an inquiry or message to us. There&rsquo;s an avenue you can explore: <strong>Contact Us</strong>. We maintain a&nbsp;real-time database of lost and found items. By doing so, you increase the chances of reuniting with your lost belongings.</li>
 <li style="text-align: justify;">On the flip side, if you happen to find a lost item, please&nbsp;<strong>Post Found Item</strong>. We&rsquo;ll take care of the rest.&nbsp;Our mission is to reunite people with their lost possessions. By reporting found items, you contribute to this effort and help someone retrieve what&rsquo;s rightfully theirs.</li>
 </ol>
+    <!-- 123 of LFIS Section End -->
+    <br>
+
+    <!-- Subscribe Section Start -->
+    <div class="container-fluid subscribe py-5">
+        <div class="container text-center py-5">
+            <h5 class="subscribe-title">Subscribe</h5>
+            <h1 class="text-white">Our Newsletter</h1>
+            <p class="text-white">Stay in the loop with our Lost and Found newsletter! Get the latest updates on found treasures, lost adventures, and insider tips for keeping your belongings safe.</p>
+            <div id="messageContainer" style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert">
+                Thank you for subscribing to the Lost and Found Information System 2024. Be entertained!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            
+            <form>
+                <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" name="email" id="email" placeholder="Your email">
+                <button type="button" class="btn btn-primary rounded-pill mt-2" onclick="showPopup()">Subscribe</button>
+            </form>
+            
+            <script>
+                function showPopup() {
+                    var messageContainer = document.getElementById("messageContainer");
+                    var emailInput = document.getElementById("email");
+                    
+                    // Clear the input field
+                    emailInput.value = "";
+            
+                    // Show the message container
+                    messageContainer.style.display = "block";
+                }
+            </script>
+            
+            </form>
+        </div>
+    </div>
+    <!-- Subscribe Section End -->
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

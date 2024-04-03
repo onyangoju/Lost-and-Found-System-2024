@@ -10,19 +10,19 @@
     <nav class="header-nav me-auto">
       <ul class="d-flex align-items-center h-100">
         <li class="nav-item pe-3">
-            <a href="<?= base_url ?>" class="nav-link">Home</a>
+            <a href="<?= base_url ?>" class="nav-link">HOME</a>
         </li>
         <li class="nav-item pe-3">
-            <a href="<?= base_url.'?page=items' ?>" class="nav-link">Lost and Found</a>
+            <a href="<?= base_url.'?page=items' ?>" class="nav-link">LOST AND FOUND</a>
         </li>
         <li class="nav-item pe-3">
-            <a href="<?= base_url.'?page=found' ?>" class="nav-link">Post Found Item</a>
+            <a href="<?= base_url.'?page=found' ?>" class="nav-link">POST FOUND ITEM</a>
         </li>
         <li class="nav-item pe-3">
-            <a href="<?= base_url."?page=about" ?>" class="nav-link">About</a>
+            <a href="<?= base_url."?page=about" ?>" class="nav-link">ABOUT US</a>
         </li>
         <li class="nav-item pe-3">
-            <a href="<?= base_url.'?page=contact' ?>" class="nav-link">Contact Us</a>
+            <a href="<?= base_url.'?page=contact' ?>" class="nav-link">CONTACT US</a>
         </li>
       </ul>
     </nav><!-- End Icons Navigation -->
